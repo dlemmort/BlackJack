@@ -1,0 +1,12 @@
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\bin\Debug\net7.0\BlackJack.Controller.deps.json
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\bin\Debug\net7.0\BlackJack.Controller.dll
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\bin\Debug\net7.0\BlackJack.Controller.pdb
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\BlackJack.Controller.csproj.AssemblyReference.cache
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\BlackJack.Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\BlackJack.Controller.AssemblyInfoInputs.cache
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\BlackJack.Controller.AssemblyInfo.cs
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\BlackJack.Controller.csproj.CoreCompileInputs.cache
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\BlackJack.Controller.dll
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\refint\BlackJack.Controller.dll
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\BlackJack.Controller.pdb
+C:\WORK\BD\DaanTrommel\Dag 15-19\BlackJack.Console\BlackJack.Controller\obj\Debug\net7.0\ref\BlackJack.Controller.dll
