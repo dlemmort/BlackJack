@@ -9,7 +9,7 @@ namespace BlackJack.Controller
     public class Hand
     {
         public int TotalValue { get; private set; }
-        public int Bet { get; set; }
+        public int Bet { get; private set; }
         public List<Card> Cards { get; private set; }
         public bool Playable { get; set; }
         public Hand() 
@@ -31,11 +31,16 @@ namespace BlackJack.Controller
             TotalValue = Cards.Sum(card => card.Value);
             if (TotalValue > 21)
             {
-                int aceIndex = Cards.FindIndex(card => card.Rank == Rank.Ace && card.Value == 11);
-                if (aceIndex != -1)
+                int numberOfAces = Cards.Count(card => card.Rank == Rank.Ace);
+                if (numberOfAces > 0)
                 {
-                    Cards[aceIndex].LowerAce();
-                    CalculateTotalValue();
+                    for (int i = 0; i < numberOfAces; i++)
+                    {
+                        if(TotalValue > 21)
+                        {
+                            TotalValue -= 10;
+                        }
+                    }
                 }
                 CheckPlayable();
                 
@@ -50,6 +55,18 @@ namespace BlackJack.Controller
         public void PlaceBet(int bet)
         {
             Bet = bet;
+        }
+
+        public int PayBet()
+        {
+            int bet = Bet;
+            Bet = 0;
+            return bet;
+        }
+
+        public void CollectPayment(int payment)
+        {
+            Bet += payment;
         }
 
 

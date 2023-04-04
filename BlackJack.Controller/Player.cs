@@ -51,13 +51,13 @@ namespace BlackJack.Controller
 
         public void Bet(int bet)
         {
-            Hands[0].Bet = bet;
+            Hands[0].PlaceBet(bet);
             Money -= bet;
         }
 
         private void CheckPlaying()
         {
-            if (Hands.Where(hand => hand.Playable == true).Count() == 0)
+            if (!Hands.Any(hand => hand.Playable))
             {
                 Playing = false;
             }

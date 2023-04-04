@@ -25,32 +25,15 @@ namespace BlackJack.Controller
 
         private void AddCards()
         {
-            for (int deck = 0; deck < 6;  deck++)
+            for (int i = 0; i < 6; i++)
             {
-                for (int suitNumber = 0; suitNumber < 4; suitNumber++)
+
+                foreach (Suit suit in Enum.GetValues(typeof(Suit)))
                 {
-                    Suit suit = new Suit();
-                    switch (suitNumber)
+                    foreach (Rank rank in Enum.GetValues(typeof(Rank)))
                     {
-                        case 0: suit = Suit.Hearts; break;
-                        case 1: suit = Suit.Diamonds; break;
-                        case 2: suit = Suit.Clubs; break;
-                        case 3: suit = Suit.Spades; break;
-                        default: throw new ArgumentOutOfRangeException();
+                        Cards.Add(new Card(suit, rank));
                     }
-                    Cards.Add(new Card(suit, Rank.Two));
-                    Cards.Add(new Card(suit, Rank.Three));
-                    Cards.Add(new Card(suit, Rank.Four));
-                    Cards.Add(new Card(suit, Rank.Five));
-                    Cards.Add(new Card(suit, Rank.Six));
-                    Cards.Add(new Card(suit, Rank.Seven));
-                    Cards.Add(new Card(suit, Rank.Eight));
-                    Cards.Add(new Card(suit, Rank.Nine));
-                    Cards.Add(new Card(suit, Rank.Ten));
-                    Cards.Add(new Card(suit, Rank.Jack));
-                    Cards.Add(new Card(suit, Rank.Queen));
-                    Cards.Add(new Card(suit, Rank.King));
-                    Cards.Add(new Card(suit, Rank.Ace));
                 }
             }
         }

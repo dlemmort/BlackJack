@@ -20,7 +20,7 @@ namespace BlackJack.Controller.Tests
             int size = shoe.Cards.Count();
 
             // assert
-            Assert.AreEqual(size, 312);
+            Assert.AreEqual(312, size);
         }
 
         [TestMethod]
@@ -100,7 +100,7 @@ namespace BlackJack.Controller.Tests
             Card card = shoe.TakeCard();
 
             // assert
-            Assert.AreEqual(Suit.Hearts, card.Suit);
+            Assert.AreEqual(Suit.Spades, card.Suit);
             Assert.AreEqual(Rank.Two, card.Rank);
         }
 
@@ -116,7 +116,7 @@ namespace BlackJack.Controller.Tests
             Card thirdCard = shoe.TakeCard();
 
             // assert
-            Assert.AreEqual(Suit.Hearts, thirdCard.Suit);
+            Assert.AreEqual(Suit.Spades, thirdCard.Suit);
             Assert.AreEqual(Rank.Four, thirdCard.Rank);
         }
 
@@ -134,7 +134,7 @@ namespace BlackJack.Controller.Tests
             }
 
             // assert
-            Assert.AreEqual(Suit.Diamonds, card.Suit);
+            Assert.AreEqual(Suit.Hearts, card.Suit);
             Assert.AreEqual(Rank.Two, card.Rank);
         }
 

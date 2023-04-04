@@ -166,5 +166,47 @@ namespace BlackJack.Controller.Tests
             // assert
             Assert.AreEqual(3, hand.Bet);
         }
+
+        [TestMethod]
+        public void PayBet_IfBetIs5_Returns5()
+        {
+            // assign
+            Hand hand = new Hand();
+            hand.PlaceBet(5);
+
+            // act
+            int returnValue = hand.PayBet();
+
+            // assert
+            Assert.AreEqual(5, returnValue);
+        }
+
+        [TestMethod]
+        public void PayBet_IfBetIsPaid_HandBetIs0()
+        {
+            // assign
+            Hand hand = new Hand();
+            hand.PlaceBet(5);
+
+            // act
+            hand.PayBet();
+
+            // assert
+            Assert.AreEqual(0, hand.Bet);
+        }
+
+        [TestMethod]
+        public void CollectPayment_IfBetIs5AndPaymentIs10_NewBetIs15()
+        {
+            // assign
+            Hand hand = new Hand();
+            hand.PlaceBet(5);
+
+            // act
+            hand.CollectPayment(10);
+
+            // assert
+            Assert.AreEqual(15, hand.Bet);
+        }
     }
 }

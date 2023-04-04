@@ -53,27 +53,6 @@ namespace BlackJack.Controller.Tests
             // assert
             Assert.IsInstanceOfType(card, typeof(Card));
         }
-
-        [TestMethod]
-        public void DealCard_ShoeIsEmpty_GivesShoeIsEmptyException()
-        {
-            // assign
-            Game game = new Game(20);
-            Card card;
-            for (int i = 0; i < 312; i++)
-            {
-                card = game.DealCard();
-            }
-
-            // act
-            void act()
-            {
-                card = game.DealCard();
-            }
-
-            // assert
-            Assert.ThrowsException<ShoeIsEmptyException>(act);
-        }
         
     }
 }

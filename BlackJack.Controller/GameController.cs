@@ -11,7 +11,7 @@ namespace BlackJack.Controller
     public class GameController
     {
         private Game _game;
-        private IGamePrinter _printer;
+        private readonly IGamePrinter _printer;
         public GameController(IGamePrinter gamePrinter) 
         {
             _printer = gamePrinter;

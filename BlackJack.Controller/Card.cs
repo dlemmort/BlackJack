@@ -1,30 +1,5 @@
 ﻿namespace BlackJack.Controller
 {
-    public enum Suit
-    {
-        Spades,
-        Hearts,
-        Diamonds,
-        Clubs,
-    }
-
-    public enum Rank
-    {
-        Two,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Jack,
-        Queen,
-        King,
-        Ace,
-    }
-
     public record Card
     {
         public Suit Suit { get; }
@@ -55,10 +30,5 @@
             Rank.King => 10,
             Rank.Ace => 11,
         };
-
-        public void LowerAce()
-        {
-            Value = 1;
-        }
     }
 }

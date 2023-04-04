@@ -25,21 +25,18 @@ namespace BlackJack.Controller
 
         public Card DealCard()
         {
-            if (_shoe.Cards.Count == 0)
-            {
-                throw new ShoeIsEmptyException();
-            }
             return _shoe.TakeCard();
         }
 
         public void CollectBet(Hand hand)
         {
-            hand.Bet = 0;
+            hand.PayBet();
         }
 
         public void Pay(Hand hand)
         {
-            hand.Bet *= 2;
+            int payment = hand.Bet;
+            hand.CollectPayment(payment);
         }
 
         public void ShuffleShoe()
